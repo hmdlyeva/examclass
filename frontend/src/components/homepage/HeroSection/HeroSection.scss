@@ -1,0 +1,57 @@
+#hero_section{
+    .hero_section{
+        .container{
+            .my_hero_section{
+                background-image: url('../../../assets/images/hamidasimage01.jpg');
+               height: 260px;
+               background-position:top;
+               background-size: cover;
+            //    .buttons{
+            //     display: flex;
+            //    }
+            padding: 200px;
+            background-attachment: fixed;
+            h1{
+                color: white;
+                font-size: 30px;
+            }
+            p{
+                color: white;
+                width: 450px;
+            }
+          .buttons{
+           display: flex;
+           gap: 3px;
+            .hover_one{
+                padding: 10px 22px;
+                background-color:inherit;
+                border: 1px solid white;
+                color: white;
+                cursor: pointer;
+            }
+            .hover_one:hover{
+                padding: 10px 22px;
+                background-color:white;
+                border: 1px solid white;
+                color: black;
+                
+            }
+            .hover_second{
+                padding: 10px 22px;
+                background-color: white;
+                border: 1px solid white;
+                color: black;
+                cursor: pointer;
+            }
+            .hover_second:hover{
+                padding: 10px 22px;
+                background-color: inherit;
+                border: 1px solid white;
+                color: white;
+               
+            }
+          }
+            }
+        }
+    }
+}

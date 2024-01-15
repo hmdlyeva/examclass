@@ -1,0 +1,116 @@
+#our_prod {
+    .our_prod {
+        .container {
+            // display: flex;
+            // justify-content: center;
+
+            // border: 1px solid;
+            .my_our_prod {
+
+                .upper_prod {
+                    // width: 430px;
+                    text-align: center;
+
+                    h4 {
+                        color: lightgray;
+                    }
+
+                    h1 {
+                        font-size: 40px;
+                    }
+                }
+
+                .cards_all {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .card_example {
+                        padding-top: 10px;
+                        overflow: hidden;
+
+                        .hover_image {
+                            overflow: hidden;
+
+                            .card_image {
+                                background-image: url("../../../assets/images/hamidasimage02.jpg");
+                                width: 400px;
+                                height: 400px;
+                                background-size: cover;
+
+                            }
+                        }
+
+                        .card_image:hover {
+                            background-size: cover;
+                            transition: .5s;
+                            // background-size: 120%;
+                            transform: scale(1.2);
+                            overflow: hidden;
+                        }
+
+                        img:hover {
+                            background-size: cover;
+                            transition: .5s;
+                            // background-size: 120%;
+                            transform: scale(1.2);
+                            overflow: hidden;
+                        }
+
+
+                        .card_detail {
+                            padding-top: 20px;
+                            text-align: center;
+
+                            // .smaller_span {
+                            //     width: 200px;
+                            // }
+
+                            .reiting {
+                                display: flex;
+                                gap: 10px;
+                                justify-content: center;
+                                padding: 20px 0px;
+                            }
+
+                            .buttons_card {
+                                display: flex;
+                                justify-content: center;
+                                padding: 30px 0px;
+                                gap: 10px;
+
+                                .card_btn {
+                                    border: 1px solid black;
+                                    background-color: black;
+                                    color: white;
+                                    padding: 6px 17px;
+                                    cursor: pointer;
+                                }
+
+                                .card_btn:hover {
+
+                                    background-color: white;
+                                    color: black;
+
+                                }
+
+                                .view_btn {
+                                    border: 1px solid black;
+                                    background-color: white;
+                                    color: black;
+                                    padding: 6px 17px;
+                                    cursor: pointer;
+                                }
+
+                                .view_btn:hover {
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
