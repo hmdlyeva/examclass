@@ -1,30 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import UpNavbar from './components/homepage/UpNavbar/UpNavbar'
-import { MainNavbar } from './components/homepage/MainNavbar/MainNavbar'
-import HeroSection from './components/homepage/HeroSection/HeroSection'
-import OurProd from './components/homepage/OurProd/OurProd'
-import UpFooter from './components/homepage/UpFooter/UpFooter'
-import LastFooter from './components/homepage/LastFooter/LastFooter'
-import AboutUs from './components/homepage/aboutUs/AboutUs'
-import LeaderShip from './components/homepage/leadership/LeaderShip'
-import OfferService from './components/homepage/offer/OfferService'
-
+import Home from './pages/Home/Home'
+import router from "./router/Router";
+import { RouterProvider } from "react-router-dom";
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <UpNavbar />
-      <MainNavbar />
-      <HeroSection/>
-      <OurProd/>
-      <AboutUs/>
-      <LeaderShip/>
-      <OfferService/>
-      <UpFooter/>
-      <LastFooter/>
-    </>
+
+    <RouterProvider router={router} />
+
   )
 }
 

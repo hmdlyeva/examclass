@@ -1,6 +1,8 @@
 import React from 'react'
 import './MainNavbar.scss'
+import { Link, Outlet, useNavigate } from "react-router-dom";
 export const MainNavbar = () => {
+    const navigate = useNavigate();
     return (
         <section id='main_navbar'>
             <div className="main_navbar">
@@ -12,13 +14,42 @@ export const MainNavbar = () => {
                         </div>
                         <div className="right_side">
                             <ul>
-                                <li>Home</li>
-                                <li>Products</li>
-                                <li>About Us</li>
-                                <li>Special</li>
-                                <li>Testimonials</li>
-                                <li>Blog</li>
-                                <li>Contact</li>
+                                <li>
+                                    <Link to="/">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/products">
+                                        Products
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/special">
+                                        Special
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/testimonials">
+                                        Testimonials
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog">
+                                        Blog
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/contact">
+
+                                        Contact
+                                    </Link>
+                                </li>
                             </ul>
                             {/* <p>=</p> */}
                         </div>

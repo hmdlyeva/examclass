@@ -2,19 +2,16 @@ import React, { useEffect, useState } from 'react'
 import './OurProd.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faHeart } from '@fortawesome/free-solid-svg-icons'
-
-import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux'
+import { getAllData } from '../../../redux/slice/slice'
 
 const OurProd = () => {
-    const [data, setData] = useState([])
+    const products = useSelector((state) => state.products.products)
+    const dispatch = useDispatch()
+
     useEffect(() => {
-        axios.get('http://localhost:5000/users').then((res) => {
-            setData(res.data)
-        })
-
+        dispatch(getAllData())
     }, [])
-
-    console.log(data)
 
     return (
         <section id='our_prod'>
@@ -28,7 +25,7 @@ const OurProd = () => {
                         </div>
                         <div className="cards_all">
                             {
-                                data && data.map((user) => {
+                                products && products.map((user) => {
                                     return (
 
 
