@@ -1,0 +1,62 @@
+#about_page {
+    .about_page {
+        .container {
+            .my_about {
+                display: flex;
+                padding: 150px;
+                gap: 100px;
+
+                .left_side {
+                    flex: 1;
+
+                    .image_side {
+                        background-image: url('../../../assets/images/hamidasimage08.jpg');
+                        height: 500px;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .trust {
+                        background-color: rgb(85, 180, 148);
+                        position: absolute;
+                        margin-top: -100px;
+                        margin-left: 340px;
+                        padding: 5px 20px;
+
+                        h1 {
+                            font-size: 42px;
+                            color: white;
+                            margin-top: 5px;
+                        }
+
+                        p {
+                            color: white;
+                            margin-top: -20px;
+                        }
+                    }
+
+
+                }
+
+                .right_side {
+                    p {
+                        color: gray;
+                        width: 200px;
+                        line-height: 23px;
+                    }
+
+                    button {
+                        padding: 10px 15px;
+                        background-color: black;
+                        color: white;
+                        border: none;
+                    }
+
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

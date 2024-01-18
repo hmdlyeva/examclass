@@ -1,0 +1,48 @@
+#offer {
+    .offer {
+        .container {
+            .my_offer {
+                background-color: rgb(238, 238, 238);
+                .upper {
+                    text-align: center;
+
+                    p {
+                        color: gray;
+                    }
+
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+
+                .texts {
+                    padding: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .text {
+                        display: flex;
+                        gap: 20px;
+
+                        .right_side {
+                            width: 300px;
+
+                            p {
+                                color: rgb(119, 119, 119);
+                            }
+
+                            span {
+                                color: gray;
+                            }
+
+                            h4 {
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

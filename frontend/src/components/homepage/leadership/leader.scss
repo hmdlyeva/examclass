@@ -1,0 +1,59 @@
+#leader_ship {
+    .leader_ship {
+        .container {
+            .my_ship {
+                padding: 120px;
+
+                .upper {
+
+                    text-align: center;
+
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+
+                .cards {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .card {
+                        .image {
+                            background-image: url('../../../assets/images/hamidasimage05.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            height: 200px;
+                            width: 200px;
+                            margin-left: 35px;
+                        }
+
+                        .detail {
+                            p {
+                                color: gray;
+                                width: 270px;
+                                text-align: center;
+                            }
+
+                            .light {
+                                color: lightgray;
+                            }
+
+                            .icons {
+                                display: flex;
+                                gap: 20px;
+                                text-align: center;
+                                margin-left: 75px;
+
+                                .iconicon {
+                                    color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
