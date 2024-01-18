@@ -20,6 +20,21 @@ export const MainNavbar = () => {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link to="/basket">
+                                        Cart
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/wishlist">
+                                        Wishlist
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/add">
+                                        AddProd
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link to="/products">
                                         Products
                                     </Link>

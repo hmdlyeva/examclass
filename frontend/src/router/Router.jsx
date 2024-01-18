@@ -7,6 +7,9 @@ import Test from "../pages/Paths/Test";
 import Blogg from "../pages/Paths/Blogg";
 import Contact from "../pages/Paths/Contact";
 import Abot from '../pages/Paths/Abot'
+import Basket from "../pages/Paths/Basket";
+import Wishlist from "../pages/Paths/Wishlist";
+import DetailProd from "../pages/Paths/DetailProd";
 
 const router = createBrowserRouter([
     {
@@ -45,7 +48,21 @@ const router = createBrowserRouter([
     {
         path: "/contact",
         element: <Contact />
-    }
+    },
+    {
+        path: "/basket",
+        element: <Basket/>
+    },
+    {
+        path: "/wishlist",
+        element: <Wishlist/>
+    },
+    {
+        path: "/detail/:id",
+        element: <DetailProd/>
+    },
+ 
+
 
 
 ]);
